@@ -19,6 +19,7 @@
     <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
     <div class="menu-items" id="menu">
       <a href="#">Home</a>
+      <a onclick="openGameInfo()">About the Game</a> <!-- ✅ Added -->
       <a onclick="openModal()">Get to Know Us</a>
     </div>
   </div>
@@ -66,7 +67,6 @@
              <a href="https://www.tiktok.com/@jhonrennnn?_t=ZS-90MmpBr6qqW&_r=1" target="_blank"><img src="Images/tiktok.png" alt="TikTok"></a>
             <a href="https://www.instagram.com/jhonrenflancia?igsh=YnZ5MmtqanMxbWRx" target="_blank"><img src="Images/instagram.png" alt="Instagram"></a>
           </div>
-          
         </div>
         <div class="profile">
           <img src="Images/mike.jpg" alt="Mike Angelo Hiwatig">
@@ -78,7 +78,6 @@
             <a href="#" target="_blank"><img src="Images/tiktok.png" alt="TikTok"></a>
             <a href="#" target="_blank"><img src="Images/instagram.png" alt="Instagram"></a>
           </div>
-          
         </div>
         <div class="profile">
           <img src="Images/tyron.jpg" alt="Tyron Fabrao">
@@ -96,17 +95,23 @@
     </div>
   </div>
 
+  <!-- ✅ About the Game Modal -->
+  <div class="modal" id="gameInfoModal">
+    <div class="modal-content game-modal">
+      <div class="game-bg">
+        <h2>About the Game</h2>
+        <p>
+          <strong>Eco-Frog</strong> Eco-Frog is a game with an important message. As a frog, your mission is to defend your home the river from enemies: the trash that pollutes it, such as banana peels, cans, and other garbage. Using your skills, you must clean up the river and segregate the trash in the trash bins to restore its beauty and health. 
+        </p>
+        <p>
+          The game focuses on the environmental awareness, proper segragation, and the importance of keeping our environment clean. Its goal is to raise awareness among players about the effects of trash on our nature.
+        </p>
+        <button class="close-btn" onclick="closeGameInfo()">Close</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Link external JS -->
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

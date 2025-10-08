@@ -47,7 +47,7 @@ function createLeaf() {
   leaf.style.left = Math.random() * 100 + "vw";
 
   // Random size
-  const size = Math.random() * 20 + 20;
+  const size = Math.random() * 40 + 40;
   leaf.style.width = size + "px";
   leaf.style.height = size + "px";
 
@@ -68,6 +68,7 @@ function createLeaf() {
 }
 
 setInterval(createLeaf, 2000);
+
 
 
 

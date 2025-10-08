@@ -67,5 +67,6 @@ function createLeaf() {
   setTimeout(() => leaf.remove(), (duration + 5) * 1000);
 }
 
-setInterval(createLeaf, 800);
+setInterval(createLeaf, 2000);
+
 

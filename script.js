@@ -57,7 +57,7 @@ function createLeaf() {
   leaf.style.animationDelay = Math.random() * 5 + "s";
 
   // Random leaf type
-  const leafTypes = ["Images/GreenLeaf.png", "Images/BrownLeaf.png", "Images/Ren.jpg"];
+  const leafTypes = ["Images/GreenLeaf.png", "Images/BrownLeaf.png", "Images/leaves.png", "Images/lips.png"];
   const chosen = leafTypes[Math.floor(Math.random() * leafTypes.length)];
   leaf.style.backgroundImage = `url('${chosen}')`;
 
@@ -68,5 +68,6 @@ function createLeaf() {
 }
 
 setInterval(createLeaf, 2000);
+
 
 

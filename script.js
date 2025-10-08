@@ -13,6 +13,16 @@ function closeModal() {
   document.getElementById("aboutModal").style.display = "none";
 }
 
+// ✅ Added for "About the Game"
+function openGameInfo() {
+  document.getElementById("gameInfoModal").style.display = "flex";
+  document.getElementById("menu").classList.remove("show");
+}
+
+function closeGameInfo() {
+  document.getElementById("gameInfoModal").style.display = "none";
+}
+
 // 🔹 Smooth parallax feel (disabled inside About modal)
 document.addEventListener("mousemove", (e) => {
   const modal = document.getElementById("aboutModal");
@@ -43,32 +53,22 @@ function createLeaf() {
   const leaf = document.createElement("div");
   leaf.classList.add("leaf");
 
-  // Random X position
   leaf.style.left = Math.random() * 100 + "vw";
 
-  // Random size
   const size = Math.random() * 40 + 40;
   leaf.style.width = size + "px";
   leaf.style.height = size + "px";
 
-  // Random duration & delay
   const duration = Math.random() * 5 + 5;
   leaf.style.animationDuration = duration + "s";
   leaf.style.animationDelay = Math.random() * 5 + "s";
 
-  // Random leaf type
   const leafTypes = ["Images/GreenLeaf.png", "Images/BrownLeaf.png", "Images/leaves.png", "Images/lips.png"];
   const chosen = leafTypes[Math.floor(Math.random() * leafTypes.length)];
   leaf.style.backgroundImage = `url('${chosen}')`;
 
   document.body.appendChild(leaf);
-
-  // Remove after animation
   setTimeout(() => leaf.remove(), (duration + 5) * 1000);
 }
 
 setInterval(createLeaf, 2000);
-
-
-
-

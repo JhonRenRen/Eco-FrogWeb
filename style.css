@@ -23,7 +23,7 @@ body {
 /* 🔹 Falling + Swaying Leaves */
 .leaf {
   position: fixed;
-  top: -50px;
+  top: -100px;
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -241,5 +241,6 @@ footer { margin-top: 18px; font-size: 0.75rem; color: rgba(230,238,246,0.7); }
   .profile { max-width: 100%; }
   .download-btn { width: 100%; justify-content: center; }
 }
+
 
 

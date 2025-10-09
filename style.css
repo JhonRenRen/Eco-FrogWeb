@@ -285,11 +285,11 @@ footer { margin-top: 18px; font-size: 0.75rem; color: rgba(230,238,246,0.7); }
 .game-bg button.close-btn:hover {
   background: #2e7d32;
 }
-/* ✅ Social Platform (Bottom Left Corner) */
+/* ✅ Social Platform (Bottom Right Corner) */
 .social-platform {
   position: fixed;
   bottom: 15px;
-  left: 20px;
+  right: 20px;
   color: #fff;
   text-shadow: 1px 1px 3px #000;
   z-index: 10;
@@ -311,14 +311,15 @@ footer { margin-top: 18px; font-size: 0.75rem; color: rgba(230,238,246,0.7); }
 }
 
 .platform-icons img {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
 .platform-icons img:hover {
   transform: scale(1.2);
 }
+
 
 
 

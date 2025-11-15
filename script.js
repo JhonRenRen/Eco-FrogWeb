@@ -33,19 +33,10 @@ document.addEventListener("mousemove", (e) => {
   document.body.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
 
-// 🔹 Auto detect file size
-(async function(){
-  const link = document.getElementById('downloadLink').href;
-  try {
-    const resp = await fetch(link, { method:'HEAD' });
-    const size = resp.headers.get('content-length');
-    if (size) {
-      const mb = (parseInt(size, 10) / (1024*1024)).toFixed(2);
-      document.getElementById('filesize').textContent = `File size: ${mb} MB`;
-    }
-  } catch (e) {
-    document.getElementById('filesize').textContent = "File size: (unavailable)";
-  }
+// 🔹 Auto detect file size (Manual for Dropbox or inaccessible files)
+(function() {
+  const fileSizeInMB = 10.5; // Set the file size manually (in MB)
+  document.getElementById('filesize').textContent = `File size: ${fileSizeInMB.toFixed(2)} MB`;
 })();
 
 // 🔹 Falling Leaves Generator

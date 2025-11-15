@@ -35,7 +35,7 @@ document.addEventListener("mousemove", (e) => {
 
 // 🔹 Auto detect file size (Manual for Dropbox or inaccessible files)
 (function() {
-  const fileSizeInMB = 10.5; // Set the file size manually (in MB)
+  const fileSizeInMB = 47.2; // Set the file size manually (in MB)
   document.getElementById('filesize').textContent = `File size: ${fileSizeInMB.toFixed(2)} MB`;
 })();
 
@@ -63,3 +63,4 @@ function createLeaf() {
 }
 
 setInterval(createLeaf, 2000);
+
